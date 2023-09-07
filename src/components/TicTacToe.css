@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Montserrat:wght@200&display=swap');
+
+body{
+    background-color: #252525;
+}
+
+td{
+    height: 7rem;
+    width: 7rem;
+    font-size: 4rem;
+    text-align: center;
+    border: 1px solid gold;
+    color: goldenrod;
+    font-family: Black Ops One;
+    cursor: pointer;
+    box-shadow: inset 1px 2px 4px rgba(255, 255, 255, 0.3);
+    
+}
+h1{
+    color: goldenrod;
+    font-family: Black Ops One;
+    margin-top: 1rem;
+}
+
+table{
+    border-collapse: separate; 
+  border-spacing: 1rem;
+}
+.win{
+    color: gold;
+    font-family: Black Ops One;
+}
+h3{
+    color: gold;
+    font-family: Black Ops One;
+
+}
+
+.reset{
+    background-color: goldenrod;
+    font-family: Black Ops One;
+}
