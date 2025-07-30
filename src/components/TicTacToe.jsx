@@ -19,7 +19,7 @@ const TicTacToe = () => {
     if (checkWin(square)) {
       setResult(`${move} is the winner!`);
       setBoard(Array(9).fill(""));
-      
+
       playClickSound();
       return true;
     }
@@ -121,7 +121,7 @@ const TicTacToe = () => {
     if (!gameEnded && board.filter((cell) => cell !== "").length >= 5) {
       if (checkWin(board)) {
         setBoard(Array(9).fill(""));
-        setResult(`${move==='X'?'O':'X'} is the winner!`);
+        setResult(`${move === "X" ? "O" : "X"} is the winner!`);
 
         playClickSound();
       } else if (checkDraw(board)) {
@@ -129,7 +129,7 @@ const TicTacToe = () => {
 
         setResult("Match Drawn");
         setBoard(Array(9).fill(""));
-        
+
         playClickSound();
       }
     }
@@ -138,13 +138,8 @@ const TicTacToe = () => {
   return (
     <>
       <h1 className="text-center">Tic Tac Toe</h1>
-     {
-      winner ?
-        <h3 className=" text-center">{result}</h3>:
-        <h3 >{result}</h3>
+      {winner ? <h3 className=" text-center">{result}</h3> : <h3>{result}</h3>}
 
-     }
-      
       <div className="d-flex justify-content-center mt-3">
         <table className="justify-content-center">
           <tbody>
